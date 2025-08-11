@@ -88,6 +88,17 @@ flutter:
     - assets/images/emotional_journey.png
     - assets/images/ai_companion.png
     - assets/images/nikah_navigator.png
+    - assets/images/1stphoto.png
+    - assets/images/close.png
+    - assets/images/heart.png
+    - assets/images/Star.png
+    - assets/images/firsticon.png
+    - assets/images/secondicon.png
+    - assets/images/thirdicon.png
+    - assets/images/fourthicon.png
+
+
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

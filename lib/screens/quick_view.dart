@@ -262,30 +262,65 @@ class QuickViewScreen extends StatelessWidget {
               const SizedBox(height: 20),
 
               // Bottom Navigation Bar
+              // Container(
+              //   height: 80,
+              //   decoration: BoxDecoration(
+              //     color: const Color(0xFF8B5E3C),
+              //     borderRadius: BorderRadius.circular(20),
+              //   ),
+              //   padding: const EdgeInsets.symmetric(
+              //     vertical: 12,
+              //     horizontal: 20,
+              //   ),
+              //   child: Row(
+              //     mainAxisAlignment: MainAxisAlignment.spaceAround,
+              //     children: const [
+              //       Icon(Icons.phone, color: Colors.white, size: 26),
+              //       Icon(
+              //         Icons.chat_bubble_outline,
+              //         color: Colors.white,
+              //         size: 26,
+              //       ),
+              //       Icon(Icons.person_outline, color: Colors.white, size: 26),
+              //       Icon(Icons.share, color: Colors.white, size: 26),
+              //     ],
+              //   ),
+
+              // ),
               Container(
-                height: 80,
+                width: 351,
+                height: 70,
                 decoration: BoxDecoration(
-                  color: const Color(0xFF8B5E3C),
-                  borderRadius: BorderRadius.circular(20),
-                ),
-                padding: const EdgeInsets.symmetric(
-                  vertical: 12,
-                  horizontal: 20,
+                  color: const Color(0xFFD8C7B3),
+                  borderRadius: BorderRadius.circular(166),
                 ),
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: const [
-                    Icon(Icons.phone, color: Colors.white, size: 26),
-                    Icon(
-                      Icons.chat_bubble_outline,
-                      color: Colors.white,
-                      size: 26,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Image.asset(
+                      "assets/images/firsticon.png",
+                      width: 37,
+                      height: 37,
                     ),
-                    Icon(Icons.person_outline, color: Colors.white, size: 26),
-                    Icon(Icons.share, color: Colors.white, size: 26),
+                    Image.asset(
+                      "assets/images/secondicon.png",
+                      width: 37,
+                      height: 37,
+                    ),
+                    Image.asset(
+                      "assets/images/thirdicon.png",
+                      width: 37,
+                      height: 37,
+                    ),
+                    Image.asset(
+                      "assets/images/fourthicon.png",
+                      width: 37,
+                      height: 37,
+                    ),
                   ],
                 ),
               ),
+              const SizedBox(height: 20),
             ],
           ),
         ),

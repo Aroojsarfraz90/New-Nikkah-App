@@ -25,6 +25,7 @@ import '/screens/interestpersonalitypage_screen.dart';
 import '/screens/nika7home_screen.dart';
 import '/screens/membership_screen.dart';
 import '/screens/discovermatch_screen.dart';
+import '/screens/quick_view.dart';
 
 void main() {
   runApp(const NikkahPlus3App());
@@ -70,6 +71,7 @@ class NikkahPlus3App extends StatelessWidget {
         '/home_screen': (context) => Nika7HomeScreen(),
         '/membership_screen': (context) => MembershipScreen(),
         '/discovermatch_screen': (context) => DiscoverMatchApp(),
+        '/quick_view': (context) => QuickViewScreen(),
       },
     );
   }

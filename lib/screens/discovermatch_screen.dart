@@ -601,6 +601,7 @@
 //   }
 // }
 import 'package:flutter/material.dart';
+import 'package:nikkah_plus3/screens/quick_view.dart';
 
 void main() {
   runApp(const DiscoverMatchApp());
@@ -788,22 +789,58 @@ class DiscoverMatchApp extends StatelessWidget {
                             ),
 
                             // Quick View Button
-                            Container(
-                              width: 70,
-                              height: 23,
-                              decoration: BoxDecoration(
-                                color: const Color(0xFFB39C80),
-                                borderRadius: BorderRadius.circular(16),
-                              ),
-                              alignment: Alignment.center,
-                              child: const Text(
-                                "Quick View",
-                                style: TextStyle(
-                                  fontFamily: 'ArticulatCF',
-                                  fontWeight: FontWeight.w400,
-                                  fontSize: 12,
-                                  height: 20 / 12,
-                                  color: Colors.white,
+                            //                     Container(
+                            //                       width: 70,
+                            //                       height: 23,
+                            //                       decoration: BoxDecoration(
+                            //                         color: const Color(0xFFB39C80),
+                            //                         borderRadius: BorderRadius.circular(16),
+                            //                       ),
+                            //                       InkWell(
+                            // onTap: () {
+                            //   Navigator.pushReplacement(
+                            //     context,
+                            //     MaterialPageRoute(builder: (context) => FirstScreen()),
+                            //   );
+                            //                       alignment: Alignment.center,
+                            //                       child: const Text(
+                            //                         "Quick View",
+                            //                         style: TextStyle(
+                            //                           fontFamily: 'ArticulatCF',
+                            //                           fontWeight: FontWeight.w400,
+                            //                           fontSize: 12,
+                            //                           height: 20 / 12,
+                            //                           color: Colors.white,
+                            //                         ),
+                            //                       ),
+                            //                     ),
+                            //
+                            InkWell(
+                              onTap: () {
+                                Navigator.pushReplacement(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => QuickViewScreen(),
+                                  ),
+                                );
+                              },
+                              child: Container(
+                                width: 70,
+                                height: 23,
+                                alignment: Alignment.center,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFB39C80),
+                                  borderRadius: BorderRadius.circular(16),
+                                ),
+                                child: const Text(
+                                  "Quick View",
+                                  style: TextStyle(
+                                    fontFamily: 'ArticulatCF',
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 12,
+                                    height: 20 / 12,
+                                    color: Colors.white,
+                                  ),
                                 ),
                               ),
                             ),

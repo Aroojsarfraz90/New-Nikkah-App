@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nikkah_plus3/screens/swipe_right.dart';
 import '/screens/splash_screen.dart';
 import '/screens/get_started.dart';
 import '/screens/welcome_screen.dart';
@@ -26,6 +27,7 @@ import '/screens/nika7home_screen.dart';
 import '/screens/membership_screen.dart';
 import '/screens/discovermatch_screen.dart';
 import '/screens/quick_view.dart';
+import '/screens/swipe_right.dart';
 
 void main() {
   runApp(const NikkahPlus3App());
@@ -72,6 +74,7 @@ class NikkahPlus3App extends StatelessWidget {
         '/membership_screen': (context) => MembershipScreen(),
         '/discovermatch_screen': (context) => DiscoverMatchApp(),
         '/quick_view': (context) => QuickViewScreen(),
+        'swipe_right': (context) => SwipeRightScreen(),
       },
     );
   }

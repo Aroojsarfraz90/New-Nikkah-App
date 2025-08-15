@@ -302,37 +302,39 @@ class SwipeRightScreen extends StatelessWidget {
               //   ),
               // ),
             ),
-            Container(
-              width: 351,
-              height: 70,
-              decoration: BoxDecoration(
-                color: const Color(0xFFD8C7B3),
-                borderRadius: BorderRadius.circular(166),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Image.asset(
-                    "assets/images/firsticon.png",
-                    width: 37,
-                    height: 37,
-                  ),
-                  Image.asset(
-                    "assets/images/secondicon.png",
-                    width: 37,
-                    height: 37,
-                  ),
-                  Image.asset(
-                    "assets/images/thirdicon.png",
-                    width: 37,
-                    height: 37,
-                  ),
-                  Image.asset(
-                    "assets/images/fourthicon.png",
-                    width: 37,
-                    height: 37,
-                  ),
-                ],
+            SingleChildScrollView(
+              child: Container(
+                width: 351,
+                height: 70,
+                decoration: BoxDecoration(
+                  color: const Color(0xFFD8C7B3),
+                  borderRadius: BorderRadius.circular(166),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Image.asset(
+                      "assets/images/firsticon.png",
+                      width: 37,
+                      height: 37,
+                    ),
+                    Image.asset(
+                      "assets/images/secondicon.png",
+                      width: 37,
+                      height: 37,
+                    ),
+                    Image.asset(
+                      "assets/images/thirdicon.png",
+                      width: 37,
+                      height: 37,
+                    ),
+                    Image.asset(
+                      "assets/images/fourthicon.png",
+                      width: 37,
+                      height: 37,
+                    ),
+                  ],
+                ),
               ),
             ),
             const SizedBox(height: 20),

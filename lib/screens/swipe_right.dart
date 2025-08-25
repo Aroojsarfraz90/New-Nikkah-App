@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+
 import 'dart:math' as math;
+import 'match_screen.dart';
 // import 'swipe_left_screen.dart'; // Import your SwipeLeftScreen here
 
 class SwipeRightScreen extends StatelessWidget {
@@ -69,7 +71,14 @@ class SwipeRightScreen extends StatelessWidget {
                           vertical: 8,
                         ),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const MatchScreen(),
+                          ),
+                        );
+                      },
                       child: const Text(
                         "Upgrade",
                         style: TextStyle(

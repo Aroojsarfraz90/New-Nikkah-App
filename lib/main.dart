@@ -28,6 +28,7 @@ import '/screens/membership_screen.dart';
 import '/screens/discovermatch_screen.dart';
 import '/screens/quick_view.dart';
 import '/screens/swipe_right.dart';
+import '/screens/match_screen.dart';
 
 void main() {
   runApp(const NikkahPlus3App());
@@ -74,7 +75,8 @@ class NikkahPlus3App extends StatelessWidget {
         '/membership_screen': (context) => MembershipScreen(),
         '/discovermatch_screen': (context) => DiscoverMatchApp(),
         '/quick_view': (context) => QuickViewScreen(),
-        'swipe_right': (context) => SwipeRightScreen(),
+        '/swipe_right': (context) => SwipeRightScreen(),
+        '/match_screen': (context) => const MatchScreen(),
       },
     );
   }
